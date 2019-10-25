@@ -759,7 +759,7 @@ section {
 	margin-top: 50px;
 	background:
         linear-gradient(to right, #2c77f9, #00b9b3);
-    background-blend-mode: screen;
+	background-blend-mode: screen;
 }
 
 .footer__wrap {
@@ -790,13 +790,13 @@ section {
 }
 
 .footer__menu {
-	margin-top: 20px;
+	margin-top: 10px;
 	line-height: 27px;
 }
 
 .footer-menu__link {
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 	font-family: 'MontserratRegular', sans-serif;
 	text-decoration: none;
@@ -816,7 +816,7 @@ section {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 	line-height: 27px;
 }
