@@ -806,6 +806,11 @@ section {
 	text-decoration: underline;
 }
 
+.footer-menu__link--default {
+	cursor: default;
+	pointer-events: none;
+}
+
 .footer__contact {
 	margin-top: 20px;
 }
