@@ -876,9 +876,9 @@ section {
 	cursor: text;
 }
 
-.footer__contact {
+/*.footer__contact {
 	margin-top: 20px;
-}
+}*/
 
 .footer-block__item {
 	display: -webkit-flex;
