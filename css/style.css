@@ -782,7 +782,7 @@ section {
 }
 
 .info-block__item:before {
-	content: '—';
+	content: 'â€”';
 	position: absolute;
 	left: 0;
 	color: #000;
@@ -859,15 +859,17 @@ section {
 }
 
 .footer-menu__link {
-	display: block;
+	display: inline-block;
 	font-size: 16px;
+	line-height: 1;
 	color: #fff;
 	font-family: 'MontserratRegular', sans-serif;
 	text-decoration: none;
+	border-bottom: 1px solid transparent;
 }
 
 .footer-menu__link:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid #fff;
 }
 
 .footer-menu__link--default {
