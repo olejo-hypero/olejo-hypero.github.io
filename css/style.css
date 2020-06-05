@@ -340,10 +340,10 @@ section {
 	transition: .1s ease;
 }
 
-.tabs__item:not(.tabs__item--active):hover {
+/*.tabs__item:not(.tabs__item--active):hover {
 	color: #fff;
 	border-bottom: 1px solid #fff
-}
+}*/
 
 .tabs__item--active {
 	background: #2982d6;
