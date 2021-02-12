@@ -77,7 +77,7 @@ icons.forEach (icon => {
   });
 });
 	$(".about-info__description").typed({
-        strings: ["Web-разработчик / html-верстальщик\n разработчик cms wordpress / opencart, \nпрограммист php", "Занимаюсь веб разработкой более 4 лет и за это время выполнил более 30 успешных проектов"],
+        strings: ["Web-разработчик / html-верстальщик\n разработчик cms wordpress / opencart, \nпрограммист php", "Занимаюсь веб разработкой более 6 лет и за это время выполнил более 60 успешных проектов"],
         typeSpeed: 10,
         backSpeed: 0,
         showCursor: false,
