@@ -149,22 +149,25 @@ img {
 	-ms-align-items: center;
 	align-items: center;
 	color: #000;
-	font-size: 20px;
+	font-size: 16px;
+	letter-spacing: 1px;
 	text-decoration: none;
 }
 
 .phone:before {
 	content: '';
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	background: url(..//images/phone.svg) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .phone-code {
+	font-size: 20px;
+	color: #9f7928;
 	font-weight: 700;
 	margin-right: 5px;
 }
@@ -401,6 +404,7 @@ section {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
+	z-index: 99;
 	transform: translate(-50%, -20px);
 	filter: brightness(0) invert(1);
 	background: url(..//images/mouse.png) no-repeat;
