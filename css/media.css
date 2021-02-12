@@ -12,11 +12,24 @@
 
 /* Portrait tablets and small desktops */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	.header__btn {
+		display: block;
+	}
 	.nav, .header__right {
 		display: none;
 	}
 	.gamburger {
 		display: block;
+	}
+	.portfolio-item {
+		flex-basis: 49%;
+		margin-right: 2%;
+	}
+	.portfolio-item:nth-child(2n) {
+		margin-right: 0;
+	}
+	.portfolio-item:nth-child(3n) {
+		margin-right: 2%;
 	}
 }
 

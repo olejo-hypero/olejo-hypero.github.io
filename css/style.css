@@ -86,7 +86,7 @@ img {
 
 .logo__slogan {
 	font-size: 30px;
-	color: #000;
+	color: #5611ec;
 	font-family: 'ProximaNovaBlack', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -195,7 +195,7 @@ img {
   margin: 10px 10px;
   position: relative;
   cursor: pointer;
-  display: inline-block;
+  display: none;
 }
 .header__btn .toggle__line{
   background-color:#000;
@@ -470,7 +470,7 @@ section {
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
-	background: #5611ec;
+	background: #fedb37;
 }
 
 .portfolio__tab {
@@ -483,8 +483,8 @@ section {
 	/* margin: 0 20px; */
 	font-size: 16px;
 	text-align: center;
-	font-family: 'MontserratRegular';
-	color: #fff;
+	font-family: 'MontserratSemiBold';
+	color: #9f7928;
 	text-decoration: none;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -499,6 +499,7 @@ section {
 }*/
 
 .tabs__item--active {
+	position: relative;
 	background: #5611ec;
 	color: #fff;
 	font-family: 'MontserratSemiBold';
@@ -567,7 +568,7 @@ section {
 }
 
 .portfolio__item:hover .portfolio-item__subtitle {
-	color: #42a4ff;
+	color: #9f7928;
 }
 
 .portfolio__item:hover .portfolio-item__title {
@@ -598,7 +599,9 @@ section {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(-45deg, rgba(221, 3, 228, .7),rgb(86, 17, 236));
+	background: 
+		radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     background-blend-mode: screen;
 	opacity: 0;
 	visibility: hidden;
@@ -754,7 +757,11 @@ section {
 }
 
 .service-block:hover .service-block__bg {
-	background: linear-gradient(90deg, rgba(221, 3, 228, .7),rgb(86, 17, 236))
+	opacity: 1;
+}
+
+.service-block:hover .service-block__overlay {
+	opacity: 0;
 }
 
 .service-block:hover {
@@ -773,10 +780,26 @@ section {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-transition: .9s linear;
-	-moz-transition: .9s linear;
-	-ms-transition: .9s linear;
-	-o-transition: .9s linear;
+	background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+	opacity: 0;
+	-webkit-transition: .4s linear;
+	-moz-transition: .4s linear;
+	-ms-transition: .4s linear;
+	-o-transition: .4s linear;
+}
+
+.service-block__overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .4s linear;
+	-webkit-transition: .4s linear;
+	-moz-transition: .4s linear;
+	-ms-transition: .4s linear;
+	-o-transition: .4s linear;
 }
 
 .service-block__top {
@@ -820,10 +843,10 @@ section {
 	opacity: .9;
 	font-family: 'MontserratBold', sans-serif;
 	transition: .9s linear;
-	-webkit-transition: .9s linear;
-	-moz-transition: .9s linear;
-	-ms-transition: .9s linear;
-	-o-transition: .9s linear;
+	-webkit-transition: .4s linear;
+	-moz-transition: .4s linear;
+	-ms-transition: .4s linear;
+	-o-transition: .4s linear;
 }
 
 .service-block__title {
@@ -832,10 +855,10 @@ section {
 	color: #fff;
 	opacity: .5;
 	text-transform: uppercase;
-	-webkit-transition: .9s linear;
-	-moz-transition: .9s linear;
-	-ms-transition: .9s linear;
-	-o-transition: .9s linear;	
+	-webkit-transition: .4s linear;
+	-moz-transition: .4s linear;
+	-ms-transition: .4s linear;
+	-o-transition: .4s linear;	
 }
 
 .service-block:hover .service-block__icon i, .service-block:hover .service-block__title, .service-block:hover .service-list__item {
