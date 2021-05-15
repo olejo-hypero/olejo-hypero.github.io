@@ -91,7 +91,7 @@
 }
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 581px) and (max-width: 767px) {
 	.btn-toggle {
 		display: block;
 	}
@@ -170,7 +170,7 @@
 }
 
 /* Landscape phones and smaller */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 	.btn-toggle {
 		display: block;
 	}
@@ -221,6 +221,9 @@
 	}
 	.services__wrap, .skills__wrap {
 		flex-wrap: wrap;
+	}
+	.service-block__overlay {
+		background: rgba(0,0,0,.8);
 	}
 	.service-block {
 		width: 100%;
