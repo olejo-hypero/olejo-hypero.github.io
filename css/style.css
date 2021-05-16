@@ -382,10 +382,13 @@ img {
 	margin-top: 25px;
 }
 
+.header__contacts {
+	margin-top: 20px;
+}
+
 .panel-contacts {
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
 }
 
 .panel-contacts__link {
@@ -393,9 +396,13 @@ img {
 	display: block;
 	padding: 5px 0;
 	color: rgba(255,255,255,0.85);
-    text-shadow: 2px 2px 3px rgb(255 255 255 / 10%);
+	text-shadow: 2px 2px 3px rgb(255 255 255 / 10%);
 	font-size: 16px;
 	text-decoration: none;
+}
+
+.panel-contacts__link:hover:before {
+	color: #5611ec;
 }
 
 .panel-contacts__link:before {
@@ -405,6 +412,11 @@ img {
     text-shadow: 2px 2px 3px rgb(255 255 255 / 10%);
 	margin-right: 10px;
 	text-shadow: 2px 2px 3px rgb(255 255 255 / 10%);
+	transition: .15s linear;
+	-webkit-transition: .15s linear;
+	-moz-transition: .15s linear;
+	-ms-transition: .15s linear;
+	-o-transition: .15s linear;
 }
 
 .panel-contacts__link--skype:before {
