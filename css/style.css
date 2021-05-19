@@ -410,22 +410,32 @@ img {
 
 .panel-contacts__button {
 	padding: 0 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 50px;
-    border: 2px solid #5611ec;
-    color: #5611ec;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 50px;
+	border: 2px solid #5611ec;
+	color: #5611ec;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	transition: .24s ease;
+	-webkit-transition: .24s ease;
+	-moz-transition: .24s ease;
+	-ms-transition: .24s ease;
+	-o-transition: .24s ease;
+}
+
+.panel-contacts__button:hover {
+	background-color: #5611ec;
+	color: #fff;
 }
 
 .panel-contacts__link {
