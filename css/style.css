@@ -539,8 +539,8 @@ section {
 }
 
 .about-info__title {
-	font-size: 30px;
-	color: #000;
+	font-size: 25px;
+	color: #5611ec;
 	font-family: 'Montserrat';
     font-weight: bold;
 	text-align: center;
@@ -548,7 +548,8 @@ section {
 }
 
 .about-info__description {
-	padding-top: 20px;
+	position: relative;
+	padding-top: 25px;
 	font-family: 'FiraSansLight';
 	font-size: 18px;
 	color: #000;
@@ -556,6 +557,18 @@ section {
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	line-height: 30px;
+}
+
+.about-info__description:before {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #5611ec;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 @-webkit-keyframes move {
