@@ -143,6 +143,11 @@ img {
 	 color: #fff; 
 }*/
 
+.nav {
+	height: 100px;
+	line-height: 100px;
+}
+
 .nav__link {
 	display: inline-block;
 	/* height: 100%; */
