@@ -615,7 +615,7 @@ img {
   left: 0px;
   z-index: 999;
   width: 100%;
-  padding: 35px 0px;
+  padding: 35px 100px;
   background: rgba(0, 7, 52, 0.9);
 }
 .header-inner {
@@ -838,6 +838,7 @@ img {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding: 0 100px;
 }
 .banner-info .container {
   position: relative;
