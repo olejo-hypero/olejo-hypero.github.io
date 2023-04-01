@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/jquery.arcticmodal-0.3.css" />
   </head>
   <body>
     <div class="panel">
@@ -46,12 +47,12 @@
       </div>
       <ul class="socials-menu">
         <li>
-          <a href="tg://">
+          <a href="tg://resolve?domain=HyperoWeb">
             <img src="img/tg.svg" alt="" />
           </a>
         </li>
         <li>
-          <a href="viber://">
+          <a href="viber://chat?number=%2B79373592067">
             <img src="img/vb.svg" alt="" />
           </a>
         </li>
@@ -73,25 +74,17 @@
             <div class="panel-nav-menu nav-menu-1">
               <ul class="nav-menu-list">
                 <li>
-                  <a href="services.html#website-development"
-                    >Создание сайтов</a
-                  >
+                  <a href="#website-development">Создание сайтов</a>
                 </li>
-                <li>
-                  <a href="services.html#website-revision">Доработка сайтов</a>
-                </li>
-                <li><a href="services.html#layout">Верстка</a></li>
-                <li><a href="services.html#design">Дизайн</a></li>
-                <li>
-                  <a href="services.html#site-maintenance"
-                    >Обслуживание сайтов</a
-                  >
-                </li>
+                <li><a href="#website-revision">Доработка сайтов</a></li>
+                <li><a href="#layout">Верстка</a></li>
+                <li><a href="#design">Дизайн</a></li>
+                <li><a href="#site-maintenance">Обслуживание сайтов</a></li>
               </ul>
             </div>
             <div class="panel-nav-menu nav-menu-2">
               <ul class="nav-menu-list">
-                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html" class="transition">Главная</a></li>
                 <li>
                   <a href="portfolio.html" class="transition">Портфолио</a>
                 </li>
@@ -162,103 +155,94 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <div class="banner">
-        <div class="banner-inner">
-          <div class="banner-images-slider">
-            <div
-              class="banner-images-item"
-              style="
-                background: url(img/banner.jpg) no-repeat;
-                background-size: cover;
-              "
-            ></div>
-            <div
-              class="banner-images-item"
-              style="
-                background: url(img/banner2.jpg) no-repeat;
-                background-size: cover;
-              "
-            >
-              <div
-                class="banner-images-bg"
-                style="background: rgba(69, 11, 54, 0.5)"
-              ></div>
-            </div>
-            <div
-              class="banner-images-item"
-              style="background: url(img/banner4.jpg) no-repeat center / cover"
-            >
-              <div
-                class="banner-images-bg"
-                style="background: rgba(0, 7, 52, 0)"
-              ></div>
-            </div>
+    <main class="cd-main-content main-page">
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs-inner">
+            <span class="breadcrumbs-item breadcrumbs-item-home">
+              <a href="index.html">Главная</a>
+            </span>
+            <span class="separator">⤳</span>
+            <span class="breadcrumbs-item breadcrumbs-item-current">
+              Услуги
+            </span>
           </div>
-          <div class="banner-info">
-            <div class="container">
-              <div class="banner-info-slider">
-                <div class="banner-info-item">
-                  <div class="info-item-title">
-                    <span>Создание</span> сайтов, <br />на которые хочется
-                    <br />смотреть
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="title title-center">Обо мне</div>
+        <div class="content-inner">
+          <div class="container">
+            <div class="skills-blocks">
+              <div class="skills-block grid-2 info-block">
+                <div class="skills-block-step">01</div>
+                <div class="info-block-title">Обо мне</div>
+                <ul class="info-block-list">
+                  <li class="info-block-item">
+                    Занимаюсь веб разработкой с 2012 года по настоящее время.
+                  </li>
+                  <li class="info-block-item">Разработка сайтов</li>
+                  <li class="info-block-item">Доработка сайтов</li>
+                  <li class="info-block-item">Верстка</li>
+                  <li class="info-block-item">
+                    Интеграция верстки под CMS Wordpress/OpenCart
+                  </li>
+                  <li class="info-block-item">CMS: WordPress, OpenCart</li>
+                  <li class="info-block-item">
+                    <span class="info-block-item-subtitle"
+                      >Разработка сайтов:</span
+                    >
+                    <ol class="info-block-list-grid">
+                      <li>Сайты под ключ</li>
+                      <li>Интернет магазины</li>
+                      <li>Landing Page</li>
+                      <li>Сайты визитки</li>
+                      <li>Корпоративные сайты</li>
+                      <li>Вёрстка</li>
+                      <li>Доработка сайтов</li>
+                      <li>Интеграция</li>
+                      <li>Дизайн</li>
+                      <li>Обслуживание сайтов</li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills-block info-block">
+                <div class="skills-block-step">02</div>
+                <div class="info-block-title">Связь со мной</div>
+                <div class="info-block-list">
+                  <div class="info-block-item">
+                    Skype:
+                    <span class="info-block-slogan">speed-hosting1</span>
                   </div>
-                  <div class="info-item-desc">
-                    Делаю сайты любой сложности: по ТЗ и четко в срок.
-                    <br />Сайт под ключ, интернет-магазины, сайты-визитки и др.
+                  <div class="info-block-item">
+                    Email:
+                    <span class="info-block-slogan">programpsc@gmail.com</span>
                   </div>
-                  <a
-                    href="tg://resolve?domain=HyperoWeb"
-                    class="button button-large info-item-button"
-                    >Заказать сайт</a
-                  >
-                </div>
-                <div class="banner-info-item">
-                  <div class="info-item-title">
-                    <span>Доработка</span> и <br />обслуживание <br />сайтов
+                  <div class="info-block-item">
+                    Telegram:
+                    <span class="info-block-slogan"
+                      ><a href="tg://resolve?domain=HyperoWeb"
+                        >@HyperoWeb</a
+                      ></span
+                    >
                   </div>
-                  <div class="info-item-desc">
-                    Занимаюсь доработкой и обслуживанием сайтов.
-                    <br />
-                    Исправление ошибок, разработка нового функионала и др.
+                  <div class="info-block-item">
+                    Номер:
+                    <span class="info-block-slogan"
+                      ><a href="tel:+79373592067">+79373592067</a></span
+                    >
                   </div>
-                  <a
-                    href="tg://resolve?domain=HyperoWeb"
-                    class="button button-large info-item-button"
-                    >Заказать разработку</a
-                  >
-                </div>
-                <div class="banner-info-item banner-info-item--lighter">
-                  <div class="info-item-title">
-                    <span>Создание</span> <br />магазинов <br />с конверсией
+                  <div class="info-block-item">
+                    Viber:
+                    <span class="info-block-slogan"
+                      ><a href="viber://chat?number=%2B79373592067"
+                        >+79373592067</a
+                      ></span
+                    >
                   </div>
-                  <div class="info-item-desc">
-                    Занимаюсь созданием интернет магазинов с высокой
-                    <br />конверсией и продажами
-                  </div>
-                  <a
-                    href="tg://resolve?domain=HyperoWeb"
-                    class="button button-large info-item-button"
-                    >Заказать разработку</a
-                  >
                 </div>
               </div>
-              <div class="dots dots-1">
-                <span></span><span></span><span></span><span></span><span></span
-                ><span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-          <div class="slide-arrows"></div>
-          <div class="progress-bar-container">
-            <div class="progress-bar-item">
-              <span data-slick-index="0" class="progressBar"></span>
-            </div>
-            <div class="progress-bar-item">
-              <span data-slick-index="1" class="progressBar"></span>
-            </div>
-            <div class="progress-bar-item">
-              <span data-slick-index="2" class="progressBar"></span>
             </div>
           </div>
         </div>
@@ -290,5 +274,6 @@
   <script src="./js/jquery-2.2.4.min.js"></script>
   <script src="./js/typed.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./js/arcticmodal.min.js"></script>
   <script src="./js/main.js"></script>
 </html>
