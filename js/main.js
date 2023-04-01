@@ -87,7 +87,7 @@ $(document).ready(function () {
         ).data("slickIndex");
         startProgressbar();
       } else {
-        percentTime += 1 / (time + 5);
+        percentTime += 1 / (time + 10);
         $(".inProgress").parent().parent().removeClass("progress-bar-active");
         $(".inProgress" + progressBarIndex)
           .parent()
