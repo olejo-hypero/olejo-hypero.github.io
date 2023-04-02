@@ -1827,20 +1827,27 @@ img[data-src] {
   position: relative;
   padding: 60px 40px 60px;
   z-index: 100;
-  background: rgba(0, 7, 52, 0.9);
+  background: #fff;
   border-radius: 12px;
 }
 
 .modal-title {
-  font-size: 24px;
-  color: #fff;
-  font-weight: bold;
+  font-size: 30px;
+  color: var(--darkblue);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .modal-text {
   margin-top: 10px;
   display: block;
-  color: #fff;
+  color: var(--darkBlue);
+}
+
+.modal-bottom {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .panel-socials {
@@ -1876,7 +1883,7 @@ img[data-src] {
   height: 20px;
   width: 2px;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: var(--darkBlue);
 }
 
 .arcticmodal-close:before {

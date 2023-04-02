@@ -141,6 +141,29 @@ $(document).ready(function () {
     isClosed = false;
   });
 
+  $(".info-item-button").on("click", function (e) {
+    e.preventDefault();
+    let title = $(this).siblings(".info-item-title").data("title");
+    let text = $(this).siblings(".info-item-desc").text();
+    let modalHTML = `<div class="modal-title">${title}</div>
+    <div class="modal-text">${text}</div>
+    <div class="modal-bottom">Связь со мной</div>
+    <ul class="panel-socials-menu">
+      <li>
+        <a href="tg://resolve?domain=HyperoWeb">
+          <img src="img/tg.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="viber://chat?number=%2B79373592067">
+          <img src="img/vb.svg" alt="">
+        </a>
+      </li>
+    </ul>`;
+    $("#order-modal").arcticmodal();
+    $(".modal-inner").html(modalHTML);
+  });
+
   (function ($) {
     $(function () {
       $("ul.tabs__caption").each(function (i) {

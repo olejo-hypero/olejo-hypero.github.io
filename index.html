@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/jquery.arcticmodal-0.3.css" />
   </head>
   <body>
     <div class="panel">
@@ -199,12 +200,12 @@
             <div class="container">
               <div class="banner-info-slider">
                 <div class="banner-info-item">
-                  <div class="info-item-title">
+                  <div class="info-item-title" data-title="Разработка сайтов">
                     <span>Создание</span> сайтов, <br />на которые хочется
                     <br />смотреть
                   </div>
                   <div class="info-item-desc">
-                    Делаю сайты любой сложности: по ТЗ и четко в срок.
+                    Разработка сайтов любой сложности: по ТЗ и четко в срок.
                     <br />Сайт под ключ, интернет-магазины, сайты-визитки и др.
                   </div>
                   <a
@@ -214,7 +215,10 @@
                   >
                 </div>
                 <div class="banner-info-item">
-                  <div class="info-item-title">
+                  <div
+                    class="info-item-title"
+                    data-title="Доработка и обслуживание сайтов"
+                  >
                     <span>Доработка</span> и <br />обслуживание <br />сайтов
                   </div>
                   <div class="info-item-desc">
@@ -229,7 +233,10 @@
                   >
                 </div>
                 <div class="banner-info-item banner-info-item--lighter">
-                  <div class="info-item-title">
+                  <div
+                    class="info-item-title"
+                    data-title="Создание магазинов с конверсией"
+                  >
                     <span>Создание</span> <br />магазинов <br />с конверсией
                   </div>
                   <div class="info-item-desc">
@@ -267,28 +274,31 @@
     <div style="display: none">
       <div class="modal" id="order-modal">
         <div class="arcticmodal-close"></div>
-        <div class="modal-title"></div>
-        <div class="modal-text">
-          Для того, чтобы заказать данную услугу, напишите мне в вайбер или
-          телеграм.
+        <div class="modal-inner">
+          <div class="modal-title"></div>
+          <div class="modal-text">
+            Для того, чтобы заказать данную услугу, напишите мне в вайбер или
+            телеграм.
+          </div>
+          <ul class="panel-socials-menu">
+            <li>
+              <a href="tg://resolve?domain=HyperoWeb">
+                <img src="img/tg.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="viber://chat?number=%2B79373592067">
+                <img src="img/vb.svg" alt="" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="panel-socials-menu">
-          <li>
-            <a href="tg://resolve?domain=HyperoWeb">
-              <img src="img/tg.svg" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="viber://chat?number=%2B79373592067">
-              <img src="img/vb.svg" alt="" />
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </body>
   <script src="./js/jquery-2.2.4.min.js"></script>
   <script src="./js/typed.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./js/arcticmodal.min.js"></script>
   <script src="./js/main.js"></script>
 </html>
