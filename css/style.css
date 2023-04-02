@@ -2166,6 +2166,27 @@ img {
   position: relative;
   font-size: 0;
   padding: 20px;
+  overflow: hidden;
+}
+
+.portfolio-item-wrap:before {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  filter: blur;
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    #fff 40%,
+    #fff 60%,
+    transparent 100%
+  );
+  transform: translate(-100%, -25%) rotate(10deg);
+  animation: blick 3s infinite;
 }
 
 .portfolio-item-image {
